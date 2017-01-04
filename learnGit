@@ -1,0 +1,27 @@
+git config --global user.email "paperless247@gmail.com"
+git config --global user.name "paperless247"
+
+ls -la
+git init
+
+ls -la
+
+touch fileA
+git add fileA
+git commit -m 'first file'
+
+touch fileB; git add fileB; git commit -m 'seccond file'
+
+git add .
+
+git log
+git log -n1
+
+cd .git
+ls -la
+ls objects
+git cat-file -p master^{tree}
+
+cat index
+
+cat refs/heads/master
